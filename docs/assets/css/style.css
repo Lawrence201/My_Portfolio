@@ -1,0 +1,862 @@
+/* Bouncing animation for text */
+.animated-text {
+    animation: bounce 3s infinite ease-in-out;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Glowing phone number style */
+.phone-glow {
+    font-weight: bold;
+    font-size: 1em;
+    color: #00f7ff;
+    /* Bright cyan */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+
+
+
+
+@media (max-width: 1028px) {
+    .mobile-logo {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .mobile-logo img {
+        width: 65px;
+        flex-shrink: 0;
+        /* prevent the image from shrinking */
+        margin-left: -35px;
+    }
+
+    .mobile-logo .logo-name {
+        font-size: 30px;
+        /* increase carefully */
+        color: white;
+        line-height: 1;
+        margin-left: 3px;
+        font-weight: 700;
+        white-space: nowrap;
+        /* keep text in one line */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .mobile-logo {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-left: 25px;
+        /* Adjust the px value as needed */
+    }
+
+    .mobile-logo img {
+        width: 55px;
+        flex-shrink: 0;
+        /* prevent the image from shrinking */
+    }
+
+    .mobile-logo .logo-name {
+        font-size: 24px;
+        /* increase carefully */
+        color: white;
+        line-height: 1;
+        margin-left: 5px;
+        font-weight: 700;
+        white-space: nowrap;
+        /* keep text in one line */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .mobile-logo {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .mobile-logo img {
+        width: 55px;
+        flex-shrink: 0;
+        /* prevent the image from shrinking */
+    }
+
+    .mobile-logo .logo-name {
+        font-size: 23px;
+        /* increase carefully */
+        color: white;
+        line-height: 1;
+        margin-left: 2px;
+        font-weight: 700;
+        white-space: nowrap;
+        /* keep text in one line */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.hero {
+
+    padding-top: 130px;
+}
+
+@media (max-width: 1028px) {
+    .hero {
+
+        /* reduce top padding on smaller screens */
+        text-align: left !important;
+    }
+
+    .hero .title-big {
+        font-size: 73px;
+        /* shrink heading */
+    }
+
+    .hero .title-large {
+        font-size: 75px !important;
+    }
+
+    .hero .shape-mark {
+        font-size: 75px;
+    }
+
+    .hero .animated-text {
+        font-size: 19px;
+        line-height: 1.5;
+        padding: 0 10px;
+    }
+
+    .hero .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+}
+
+
+
+@media (max-width: 1028px) {
+    .hero-portrait .image img {
+        width: 100%;
+        max-width: 470px;
+        height: auto;
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateX(-60px) translateY(-71px);
+        /* moves left 90px and up 30px */
+    }
+
+    .image {
+        position: relative;
+        /* Required for absolute children like social-link and half-round-shape */
+    }
+
+    .social-link {
+        position: absolute;
+        bottom: 753px;
+        left: 2px;
+        z-index: 10;
+        transform: rotate(2deg);
+        /* Negative tilts left, positive tilts right */
+    }
+
+    .social-link a {
+        font-size: 20px;
+    }
+
+    .image-half-round-shape {
+        position: absolute;
+
+        transform: translateY(-130px);
+        /* moves element up by 10px */
+    }
+
+}
+
+/* Mobile view (480px and below) */
+/* Media Query for screens ≤ 1028px */
+@media (max-width: 1028px) {
+    .btn.btn-xl {
+        font-size: 18px;
+        /* Increase text size */
+        padding: 14px 28px;
+        /* Increase button padding */
+        display: inline-flex;
+        /* Align icon and text nicely */
+        align-items: center;
+        gap: 8px;
+        /* Space between text and icon */
+    }
+
+    .btn.btn-xl i {
+        font-size: 22px;
+        /* Increase icon size */
+    }
+
+    .video-text {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+    .ripple {
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+    }
+
+    .button-video-wrapper {
+        display: flex;
+        align-items: center;
+        /* vertically center all */
+        justify-content: flex-start;
+        gap: 45px;
+        width: 100%;
+        padding-left: 16px;
+    }
+
+    .video-link {
+        display: flex;
+        align-items: center;
+        /* Vertically center icon + text */
+        gap: 6px;
+        margin-top: -3px;
+        /* 👈 Moves it slightly up */
+    }
+}
+
+@media (max-width: 480px) {
+    .animated-text {
+        display: none !important;
+    }
+}
+
+
+
+@media (min-width: 480px) {
+    .mobile-animated-text {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+   
+    .hero {
+        text-align: left !important;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 12px;
+        overflow-x: hidden;
+    }
+
+    .hero-content {
+        top: 420px !important;
+        position: absolute;
+    }
+
+    .hero .title-big {
+        font-size: 38px !important;
+    }
+
+    .hero .title-large {
+        font-size: 43px !important;
+    }
+
+    .hero .shape-mark {
+        font-size: 43px !important;
+    }
+
+    .mobile-animated-text {
+        font-size: 15px !important;
+        line-height: 1.5;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn.btn-xl {
+        font-size: 14px;
+        padding: 10px 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .btn.btn-xl i {
+        font-size: 18px;
+    }
+
+    .video-text {
+        font-size: 14px;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .ripple {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+    .button-video-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .video-link {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-portrait .image img {
+        width: 110%;
+        max-width: 330px;
+        height: auto;
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateX(-110px) translateY(-155px);
+        /* Adjusted for smaller screens */
+    }
+
+    .image {
+        position: relative;
+    }
+
+    .social-link {
+        position: absolute;
+        bottom: 765px;
+        left: 2px;
+        z-index: 10;
+
+    }
+
+    .social-link a {
+        font-size: 16px;
+    }
+
+    .image-half-round-shape {
+        position: absolute;
+        transform: translateY(-350px);
+        /* Adjusted for better placement on small screens */
+    }
+}
+
+
+
+@media (max-width: 390px) {
+
+    .hero {
+        text-align: left !important;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 12px;
+        overflow-x: hidden;
+    }
+
+    .hero-content {
+        top: 420px !important;
+        position: absolute;
+    }
+
+    .hero .title-big {
+        font-size: 33px !important;
+    }
+
+    .hero .title-large {
+        font-size: 38px !important;
+    }
+
+    .hero .shape-mark {
+        font-size: 38px !important;
+    }
+
+    .mobile-animated-text {
+        font-size: 15px !important;
+        line-height: 1.5;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn.btn-xl {
+        font-size: 14px;
+        padding: 10px 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .btn.btn-xl i {
+        font-size: 18px;
+    }
+
+    .video-text {
+        font-size: 14px;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .ripple {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+    .button-video-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .video-link {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 340px) {
+  
+
+    .hero {
+        text-align: left !important;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 12px;
+        overflow-x: hidden;
+    }
+
+    .hero-content {
+        top: 420px !important;
+        position: absolute;
+    }
+
+    .hero .title-big {
+        font-size: 25px !important;
+    }
+
+    .hero .title-large {
+        font-size: 28px !important;
+    }
+
+    .hero .shape-mark {
+        font-size: 28px !important;
+    }
+
+    .mobile-animated-text {
+        font-size: 15px !important;
+        line-height: 1.5;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn.btn-xl {
+        font-size: 14px;
+        padding: 10px 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .btn.btn-xl i {
+        font-size: 18px;
+    }
+
+    .video-text {
+        font-size: 14px;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .ripple {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+    .button-video-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .video-link {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-top: 0;
+    }
+}
+
+.custom-contact-info {
+    display: block;
+    /* Ensure it behaves like a block */
+    position: relative;
+    /* Needed if something inside is absolutely positioned */
+    margin-top: 840px !important;
+    /* Force the top margin */
+}
+
+
+
+
+
+/* EACH CONTACT ITEM (phone, email, or social group) */
+.contact-item {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    opacity: 0.9;
+    margin-top: 15px;
+    gap: 10px;
+    /* Spacing between the circle icon and the text */
+}
+
+
+/* ICON CIRCLES */
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    /* Icon size inside the circle */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Default Icon Color */
+.icon-circle i {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect ONLY for Call & Email Icons */
+.contact-item .icon-circle:hover {
+    background-color: white;
+    border-color: white;
+}
+
+.contact-item .icon-circle:hover i {
+    color: #1C1E27;
+    /* Dark icon color for better visibility */
+}
+
+/* Social Media Icons - Background changes to brand colors, icons turn white */
+.social-icons .icon-circle:hover {
+    border-color: transparent;
+    /* Remove the white border */
+}
+
+.social-icons .icon-circle:hover i {
+    color: white;
+    /* Make the icon white */
+}
+
+/* Facebook */
+.social-icons .icon-circle:hover:nth-child(1) {
+    background-color: #1877F2;
+}
+
+/* Website (Globe) - Green */
+.social-icons .icon-circle:hover:nth-child(2) {
+    background-color: red;
+}
+
+/* LinkedIn */
+.social-icons .icon-circle:hover:nth-child(3) {
+    background-color: #0077B5;
+}
+
+/* Twitter (X) - Black */
+.social-icons .icon-circle:hover:nth-child(4) {
+    background-color: #000000;
+}
+
+
+
+/* SOCIAL ICONS WRAPPER (Optional extra styling if needed) */
+/* SOCIAL ICONS WRAPPER */
+/* SOCIAL ICONS WRAPPER */
+/* SOCIAL ICONS WRAPPER */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Initial state: hidden & positioned below */
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* When in view, animate in */
+.scroll-animation.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.contact-row {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center the items horizontally */
+    align-items: center;
+    gap: 60px;
+    /* Spacing between groups (phone, email, socials) */
+    margin-bottom: 40px;
+    margin-top: 50px;
+    /* Space above the row */
+}
+
+
+@media (max-width: 1024px) {
+    .contact-row {
+        justify-content: flex-start;
+        /* Aligns the row to the left */
+        margin-left: 50px;
+        /* Moves the entire row slightly to the left */
+        gap: 100px;
+        /* Increase spacing between phone and email */
+    }
+
+    .contact-item {
+        font-size: 1.5rem;
+        /* Slightly reduce text size for better fit */
+
+    }
+
+    .icon-circle {
+        width: 65px;
+        /* Slightly reduce icon size */
+        height: 65px;
+        font-size: 1.3rem;
+    }
+
+    .social-icons {
+        gap: 12px;
+        /* Slightly reduce spacing between icons */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .contact-row {
+        justify-content: flex-start;
+        /* Aligns row to the left */
+        margin-left: 5px;
+        /* Moves the entire row even further left */
+        gap: 25px;
+        /* Maintain a balanced gap */
+    }
+
+    .contact-item {
+        font-size: 1.0rem;
+        /* Keep text readable */
+        gap: 8px;
+        /* Slightly reduce space between icon and text */
+    }
+
+    .icon-circle {
+        width: 50px;
+        /* Reduce icon size slightly */
+        height: 50px;
+        font-size: 0.9rem;
+    }
+
+    .social-icons {
+        gap: 6px;
+        /* Reduce spacing between social icons */
+        margin-left: 3px;
+        /* Move social icons further left */
+    }
+}
+
+
+
+
+@media (max-width: 360px) {
+    .contact-row {
+        justify-content: flex-start;
+        /* Align row to the left */
+        margin-left: 2px;
+        /* Move entire row further left */
+        gap: 15px;
+        /* Reduce gap slightly */
+    }
+
+    .contact-item {
+        font-size: 0.8rem;
+        /* Decrease text size slightly */
+        gap: 5px;
+        /* Reduce space between icon and text */
+    }
+
+    .icon-circle {
+        width: 35px;
+        /* Reduce icon size */
+        height: 35px;
+        font-size: 0.8rem;
+    }
+
+    .social-icons {
+        gap: 4px;
+        /* Reduce spacing between social icons */
+        margin-left: 2px;
+        /* Move social icons further left */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Lower so they stay behind video */
+.project-box-single-item .img-box {
+    position: relative;
+    overflow: hidden;
+    height: 420px;
+    /* ↓ Set your desired height here */
+}
+
+.project-box-single-item .img-box .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-box-single-item .img-box .video video {
+    width: 93%;
+    height: auto;
+    /* Increased from 300px to 500px */
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 1028px) {
+    .project-box-single-item .img-box {
+        height: 300px;
+        /* Adjust this value as needed */
+    }
+
+    .project-box-single-item .img-box .video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* or 'contain' depending on your visual goal */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-box-single-item .img-box {
+        height: 220px;
+        /* Smaller height for mobile */
+    }
+
+    .project-box-single-item .img-box .video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Use 'contain' if you want to see the full video */
+    }
+}
+
+@media (max-width: 380px) {
+    .project-box-single-item .img-box {
+        height: 180px;
+        /* Even smaller height for very small screens */
+    }
+
+    .project-box-single-item .img-box .video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Or 'contain' if you prefer seeing the full frame */
+    }
+}

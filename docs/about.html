@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lendex - Personal Portfolio Bootstrap Template</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- CSS
+    ============================================ -->
+
+    <!-- Vendor CSS (Contain Bootstrap, Icon Fonts) -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/icofont.min.css" /> -->
+
+    <!-- Plugin CSS (Global Plugins Files) -->
+    <!-- <link rel="stylesheet" href="assets/css/plugins/animate.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/venobox.min.css" /> -->
+
+    <!-- Style CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    
+    <!-- Minify Version -->
+    <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+
+</head>
+
+<body>
+
+    <main class="main-wrapper">
+
+        <!-- .....:::::: Start Header Section :::::.... -->
+        <header class="header-section sticky-header d-none d-lg-block">
+            <div class="header-wrapper">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col">
+                            <!-- Start Header Logo and Name -->
+                            <div class="header-logo-wrapper" style="display: flex; align-items: center; gap: 5px;">
+                                <a href="index.html" class="header-logo">
+                                    <img src="assets/images/logo/logo.png" alt="Logo" style="width: 90px; height: auto;">
+                                </a>
+                                <span class="logo-name" style="font-size: 25px; font-weight: 700; color: white;">A+
+                                    SOFTEK</span>
+                            </div>
+                            <!-- End Header Logo and Name -->
+                        </div>
+        
+        
+                        <div class="col-auto">
+                            <!-- Start Header Menu -->
+                            <ul class="header-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="has-dropdown">
+                                    <a href="service-list.html">Service</a>
+                                    <ul class="submenu">
+                                        <li><a href="service-list.html">Services</a></li>
+                                        <li><a href="service-details.html">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="blog-list.html">Blog</a>
+                                    <ul class="submenu">
+                                        <li><a href="blog-details-sidebar-left.html">Our blog</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About Us</a></li>
+        
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                            <!-- End Header Menu -->
+                        </div>
+                        <div class="col">
+                            <div class="header-btn-link text-end">
+                                <a href="contact.html" class="btn btn-sm btn-outline-one icon-space-left">Hire Me <i
+                                        class="icofont-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- .....:::::: End Header Section :::::.... -->
+        
+        <!-- .....:::::: Start Mobile Header Section :::::.... -->
+        <div class="mobile-header d-block d-lg-none">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col">
+                        <div class="mobile-logo">
+                            <img src="assets/images/logo/logo.png" alt="Logo">
+                            <span class="logo-name">A+ SOFTEK</span>
+                        </div>
+        
+        
+        
+                    </div>
+        
+        
+                    <div class="col">
+                        <div class="mobile-action-link text-end">
+                            <a href="#mobile-menu-offcanvas" class="offcanvas-toggle offside-menu"><i
+                                    class="icofont-navigation-menu"></i></a>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .....:::::: Start MobileHeader Section :::::.... -->
+        
+        <!--  Start Offcanvas Mobile Menu Section -->
+        <div id="mobile-menu-offcanvas" class="offcanvas offcanvas-rightside offcanvas-mobile-menu-section">
+            <!-- Start Offcanvas Header -->
+            <div class="offcanvas-header text-end">
+                <button class="offcanvas-close"><i class="icofont-close-line"></i></button>
+            </div>
+            <style>
+                /* Show and style the close button on screens smaller than 480px */
+                @media (max-width: 480px) {
+                    .offcanvas-close {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: transparent;
+                        border: 2px solid #ccc;
+                        /* light gray border, change as needed */
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+        
+                    .offcanvas-close i {
+                        font-size: 20px;
+                        color: white;
+                        /* icon color */
+                    }
+                }
+            </style>
+        
+        
+            <!-- End Offcanvas Header -->
+            <!-- Start Offcanvas Mobile Menu Wrapper -->
+            <div class="offcanvas-mobile-menu-wrapper">
+                <!-- Start Mobile Menu  -->
+                <div class="mobile-menu-bottom">
+                    <!-- Start Mobile Menu Nav -->
+                    <div class="offcanvas-menu">
+                        <ul>
+                            <li>
+                                <a href="index.html"><span>Home</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Services</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="service-list.html">Service List</a></li>
+                                    <li><a href="service-details.html">Service Details</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>Blog</span></a>
+                                <ul class="mobile-sub-menu">
+        
+                                    <li><a href="blog-details-sidebar-left.html">Our blog</a></li>
+                                    <li><a href="blog-details.html">Blog Details</a></li>
+        
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>Pages</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="about.html">About Us</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html"><span>Contact</span></a>
+                            </li>
+                        </ul>
+                    </div> <!-- End Mobile Menu Nav -->
+                </div> <!-- End Mobile Menu -->
+        
+                <!-- Start Mobile contact Info -->
+                <div class="custom-contact-info text-center">
+                    <ul class="social-link">
+                        <li><a target="_blank" href="https://wa.me/233534829203"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a target="_blank" href="https://youtube.com/@asoftekitconsult?si=2nksTSydQtCHQztC"><i
+                                    class="fab fa-youtube"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/lawrence-antwi-27939a309/"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a target="_blank" href="https://www.tiktok.com/@lawrence_dev?_t=ZM-8zpbvRPGFYZ&_r=1"><i
+                                    class="fab fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+        
+                <!-- End Mobile contact Info -->
+        
+            </div> <!-- End Offcanvas Mobile Menu Wrapper -->
+        </div>
+        <!-- ...:::: End Offcanvas Mobile Menu Section:::... -->
+        
+
+        <!-- Offcanvas Overlay -->
+        <div class="offcanvas-overlay"></div>
+
+        <!-- ...::: Start Breadcrumb Section :::... -->
+        <div class="breadcrumb-section section-bg overflow-hidden pos-relative">
+            <div class="breadcrumb-shape-top-left"></div>
+            <div class="breadcrumb-shape-bottom-right"></div>
+            <div class="breadcrumb-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="breadcrumb-content">
+                                <h2 class="title">About Us</h2>
+                                <ul class="breadcrumb-link">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active" aria-current="page">About</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Breadcrumb Section :::... -->
+
+        <!-- ...::: Start Vider Info Display Section :::... -->
+        <div class="video-info-display-section section-gap-tb-165">
+            <div class="video-info-display-box">
+                <div class="container">
+                    <div class="video-info-display-wrapper">
+                        <div class="row align-items-center">
+                            <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8 col-10 offset-1 offset-sm-2 offset-md-3 offset-lg-0">
+                                <div class="video-card">
+                                    <a class="wave-btn" href="https://youtu.be/MKjhBO2xQzg" data-autoplay="true" data-vbtype="video">
+                                        <div class="ripple"><i class="icofont-ui-play"></i></div>
+                                    </a>
+
+                                    <a href="#" class="btn btn-xl btn-outline-one icon-space-left">Get Resume <i class="icofont-download"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-8 offset-md-2 offset-lg-0 offset-xl-1">
+                                <div class="video-info-content">
+                                    <h2 class="title">I’m Lawrence Egyin</h2>
+
+                                    <h3 class="sub-title">
+                                        Tech Enthusiast & Developer
+                                        Specializing in Programming, Web, and App Development
+                                    </h3>
+
+                                    <p>Driven by a passion for technology, I’m focused on crafting innovative solutions through programming and development.
+                                    With a keen interest in both web and app development, I’m constantly expanding my skills to create seamless,
+                                    user-friendly experiences. Whether it’s building responsive websites or developing dynamic applications, I’m committed
+                                    to pushing the boundaries of what’s possible in tech.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Vider Info Display Section :::... -->
+
+        <!-- ...::: Start Resume Info Display Section :::... -->
+        <div class="resume-info-display-section  section-gap-tb-165 section-bg">
+            <div class="resume-info-display-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="resume-tab nav">
+                                <li class="nav-item">
+                                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#education-tab">Education</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#experience-tab">Experience</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="resume-info-display-wrapper">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="education-tab" role="tabpanel">
+                                        <ul class="resume-list">
+                                            <!-- Start Resume Tab List Single Item -->
+                                            <li class="resume-tab-list-single-item">
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <span class="year">2021 – 2023</span>
+                                                    </div>
+                                                    <div class="right">
+                                                        <h3 class="title">Bachelor of Science in Information Technology (Diploma)</h3>
+                                                        <span class="institute-name">Ghana Communication Technology University</span>
+                                                        <p>A dynamic program that equips students with the essential knowledge and skills in Information Technology. The program
+                                                        focuses on the practical application of IT, preparing graduates for a broad range of technical careers. Throughout the
+                                                        course, students will gain experience in various areas including software development, network management and
+                                                        laying the foundation for a successful career in the ever-evolving tech industry.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- End Resume Tab List Single Item -->
+                                            <!-- Start Resume Tab List Single Item -->
+                                            <li class="resume-tab-list-single-item">
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <span class="year">2023 - 2025</span>
+                                                    </div>
+                                                    <div class="right">
+                                                        <h3 class="title">Bachelor of Science in Information Technology (Degree)</h3>
+                                                        <span class="institute-name">Ghana Communication Technology University</span>
+                                                        <p>The BSc in Information Technology at Ghana Communication Technology University equips students with essential IT skills,
+                                                        covering areas like software development, network security, and database management. The program focuses on practical
+                                                        knowledge and problem-solving, preparing graduates for successful careers in the tech industry.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- End Resume Tab List Single Item -->
+                                            <!-- Start Resume Tab List Single Item -->
+                                        <li class="resume-tab-list-single-item">
+                                            <div class="content">
+                                                <div class="left">
+                                                    <span class="year">2025 - Date</span>
+                                                </div>
+                                                <div class="right">
+                                                    <h3 class="title">Self-Taught Developer</h3>
+                                                    <span class="institute-name">Project-Based Learning</span>
+                                                    <p>Focused on building practical projects to strengthen skills in web development, programming, and
+                                                        problem-solving. Learning through real-world challenges, online resources, and continuous
+                                                        self-improvement rather than traditional classroom settings.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                            <!-- End Resume Tab List Single Item -->
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="experience-tab" role="tabpanel">
+                                        <ul class="resume-list">
+                                            <!-- Start Resume Tab List Single Item -->
+                                            <li class="resume-tab-list-single-item">
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <span class="year">2024 - 2025</span>
+                                                    </div>
+                                                    <div class="right">
+                                                        <h3 class="title">Software Engineer Intern</h3>
+                                                        <span class="institute-name">Tech Innovations Ltd, Accra</span>
+                                                        <p>During my internship at Tech Innovations, I worked on the development of web applications using JavaScript and Python,
+                                                        contributing to the design and implementation of key features that improved the user experience. I collaborated with the
+                                                        engineering team to troubleshoot and debug existing systems and was involved in the integration of new APIs, enhancing
+                                                        the overall functionality of client solutions.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- End Resume Tab List Single Item -->
+                                            <!-- Start Resume Tab List Single Item -->
+                                            <li class="resume-tab-list-single-item">
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <span class="year">2025</span>
+                                                    </div>
+                                                    <div class="right">
+                                                        <h3 class="title">Junior Web Developer</h3>
+                                                        <span class="institute-name">Dev Solutions, Accra</span>
+                                                        <p>During my time at Dev Solutions, I contributed to various web development projects, focusing on front-end technologies such as HTML, CSS, and JavaScript. I collaborated with designers to create responsive and user-friendly interfaces, ensuring a seamless user experience across devices. Additionally, I participated in code reviews and contributed to the overall improvement of the development process.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- End Resume Tab List Single Item -->
+                                            <!-- Start Resume Tab List Single Item -->
+                                            <li class="resume-tab-list-single-item">
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <span class="year">2025</span>
+                                                    </div>
+                                                    <div class="right">
+                                                        <h3 class="title">Senior Web Developer</h3>
+                                                        <span class="institute-name">A+ Softek IT Consult</span>
+                                                        <p>
+                                                            Led web development projects, creating responsive and user-friendly websites. Collaborated with teams to deliver
+                                                            efficient solutions and enhance client satisfaction.
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- End Resume Tab List Single Item -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Resume Info Display Section :::... -->
+
+        <!-- ...::: Start Counter Display Section :::... -->
+        <div class="counter-display-section section-gap-tb-165 section-bg-2">
+            <div class="counter-display-wrapper">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-sm-start">
+                        <div class="d-block d-md-flex justify-content-md-start col-12 col-sm-4 col-md-4">
+                            <!-- Start Counterup Single Item -->
+                            <div class="counterup-single-item">
+                                <div class="icon">
+                                    <img src="assets/images/icon/counterup-icon-1.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h2 class="number"><span class="counter">25</span>+</h2>
+                                    <span class="text">Happy Clients</span>
+                                </div>
+                            </div>
+                            <!-- End Counterup Single Item -->
+                        </div>
+                        <div class="d-block d-md-flex justify-content-md-center col-12 col-sm-4 col-md-4">
+                            <!-- Start Counterup Single Item -->
+                            <div class="counterup-single-item">
+                                <div class="icon">
+                                    <img src="assets/images/icon/counterup-icon-2.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h2 class="number"><span class="counter">12</span>+</h2>
+                                    <span class="text">Project Complete</span>
+                                </div>
+                            </div>
+                            <!-- End Counterup Single Item -->
+                        </div>
+                        <div class="d-block d-md-flex justify-content-md-end col-12 col-sm-4 col-md-4">
+                            <!-- Start Counterup Single Item -->
+                            <div class="counterup-single-item">
+                                <div class="icon">
+                                    <img src="assets/images/icon/counterup-icon-3.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h2 class="number"><span class="counter">3</span>+</h2>
+                                    <span class="text">Years of Experience</span>
+                                </div>
+                            </div>
+        
+        
+                            <!-- End Counterup Single Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Counter Display Section :::... -->
+
+
+        <!-- ...::: Start Testimonial Display Section :::... -->
+        <div class="testimonial-display-section section-gap-tb-165 section-bg">
+            <div class="testimonial-display-box d-flex flex-column align-items-center d-xl-block pos-relative">
+                <div class="container overflow-hidden">
+                    <div class="row">
+                        <div class="col d-xl-flex justify-content-xl-end">
+                            <!-- Start Section Content -->
+                            <div class="section-content pos-relative" data-aos="fade-up" data-aos-delay="0">
+                                <span class="section-tag">Testimonial</span>
+                                <h2 class="section-title">Satisfied Clients Say</h2>
+                            </div>
+                            <!-- End Section Content -->
+                        </div>
+                    </div>
+        
+                    <div class="testimonial-display-wrapper">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="testimonial-display-slider">
+                                    <!-- Swiper -->
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <!-- Start testimonial Slider Single Item -->
+                                            <div class="testimonial-slider-single-item swiper-slide" data-aos="fade-right"
+                                                data-aos-delay="150">
+                                                <div class="inner-shape inner-shape-top-right"></div>
+                                                <div class="content">
+                                                    <span class="icon">“</span>
+                                                    <p class="text">Lawrence is a creative and resourceful developer,
+                                                        always innovating and solving problems with excellence.</p>
+                                                    <div class="info">
+                                                        <div class="author">
+                                                            <h4 class="name">Sampson Boateng</h4>
+                                                            <span class="designation">CEO, A+ Softeck Company</span>
+                                                        </div>
+                                                        <ul class="review">
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="blank"><i class="icofont-star"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End testimonial Slider Single Item -->
+                                            <!-- Start testimonial Slider Single Item -->
+                                            <div class="testimonial-slider-single-item swiper-slide" data-aos="fade-left"
+                                                data-aos-delay="300">
+                                                <div class="inner-shape inner-shape-top-right"></div>
+                                                <div class="content">
+                                                    <span class="icon">“</span>
+                                                    <p class="text">Lawrence is a dedicated and innovative developer,
+                                                        always delivering creative and efficient solutions with precision and
+                                                        commitment..
+                                                    </p>
+                                                    <div class="info">
+                                                        <div class="author">
+                                                            <h4 class="name">Godfred Owusu</h4>
+                                                            <span class="designation">CEO, Godsplan Enterprise</span>
+                                                        </div>
+                                                        <ul class="review">
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="blank"><i class="icofont-star"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End testimonial Slider Single Item -->
+                                            <!-- Start testimonial Slider Single Item -->
+                                            <div class="testimonial-slider-single-item swiper-slide">
+                                                <div class="inner-shape inner-shape-top-right"></div>
+                                                <div class="content">
+                                                    <span class="icon">“</span>
+                                                    <p class="text">"Lawrence delivered beyond expectations. His creativity,
+                                                        precision, and commitment were top-notch. I'd
+                                                        trust him again without a doubt."</p>
+        
+                                                    <div class="info">
+                                                        <div class="author">
+                                                            <h4 class="name">Samuel Adjei</h4>
+                                                            <span class="designation">Project Manager</span>
+                                                        </div>
+                                                        <ul class="review">
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="fill"><i class="icofont-star"></i></li>
+                                                            <li class="blank"><i class="icofont-star"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End testimonial Slider Single Item -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="default-nav-style mt-5 mt-xl-0">
+                    <!-- If we need navigation buttons -->
+                    <div class="slider-button button-prev"><i class="icofont-double-left"></i></div>
+                    <div class="slider-button button-next"><i class="icofont-double-right"></i></div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Testimonial Display Section :::... -->
+
+        
+
+        
+
+        <!-- ...::: Start Company Logo Display Section :::... -->
+        <div class="company-logo-display    section-gap-tb-165">
+            <div class="company-logo-display-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <!-- Start Section Content -->
+                            <div class="section-content pos-relative">
+                                <span class="section-tag">Favourite Clients</span>
+                                <h2 class="section-title">Work With Trusted Comapny.</h2>
+                            </div>
+                            <!-- End Section Content -->
+                        </div>
+                    </div>
+
+                    <div class="company-logo-display-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="company-logo-display-slider">
+                                    <!-- Slider main container -->
+                                    <div class="swiper-container">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+                                            <!-- Start Company Logo Slider Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="#" class="image">
+                                                    <img src="assets/images/company-logo/boanerge2.PNG" alt="">
+                                                    <img src="assets\images\company-logo\boanerge.png" alt="">
+                                                    <p>BOANERGE PUBLICATION</p>
+                                                </a>
+                                            </div>
+                                            <!-- End Company Logo Slider Single Item -->
+                                            <!-- Start Company Logo Slider Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="#" class="image">
+                                                    <img src="assets/images/company-logo/company-logo-2.png" alt="">
+                                                    <img src="assets/images/company-logo/2.png" alt="">
+                                                </a>
+                                            </div>
+                                            <!-- End Company Logo Slider Single Item -->
+                                            <!-- Start Company Logo Slider Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="#" class="image">
+                                                    <img src="assets/images/company-logo/company-logo-3.png" alt="">
+                                                    <img src="assets/images/company-logo/3.png" alt="">
+                                                </a>
+                                            </div>
+                                            <!-- End Company Logo Slider Single Item -->
+                                            <!-- Start Company Logo Slider Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="#" class="image">
+                                                    <img src="assets/images/company-logo/company-logo-4.png" alt="">
+                                                    <img src="assets/images/company-logo/4.png" alt="">
+                                                </a>
+                                            </div>
+                                            <!-- End Company Logo Slider Single Item -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Company Logo Display Section :::... -->
+
+        <!-- ...::: Start Footer Section :::... -->
+        <footer class="footer-section section-bg overflow-hidden pos-relative">
+            <div class="footer-inner-shape-top-left"></div>
+            <div class="footer-inner-shape-top-right"></div>
+            <div class="footer-section-top section-gap-t-165">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Start Section Content -->
+                            <div class="section-content pos-relative text-center">
+                                <span class="section-tag" data-aos="fade-up" data-aos-delay="0">Get Latest Updates</span>
+                                <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Subscribe For Newsletter</h2>
+                            </div>
+                            <!-- End Section Content -->
+                        </div>
+                    </div>
+                    <div class="footer-top-wrapper text-center">
+                        <div class="row">
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                                <form action="#" class="footer-newsletter">
+                                    <input type="email" placeholder="@example.com">
+                                    <button class="submit-btn" type="submit">Subscribe Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-center section-gap-tb-165">
+                <div class="container">
+        
+                    <div class="contact-row">
+                        <!-- Phone -->
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon-circle">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <span><a href="tel:+233534829603" class="contact-link">+233 53 482 9603</a></span>
+                        </div>
+        
+                        <!-- Email -->
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="icon-circle">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <span><a href="mailto:lawrenceantwi63@gmail.com"
+                                    class="contact-link">lawrenceantwi63@gmail.com</a></span>
+                        </div>
+        
+                        <!-- Social Icons -->
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="500">
+                           <div class="social-icons">
+                                <div class="icon-circle">
+                                    <a href="" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                                <div class="icon-circle">
+                                    <a href="https://youtube.com/@asoftekitconsult?si=2nksTSydQtCHQztC" target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                                <div class="icon-circle">
+                                    <a href="https://www.linkedin.com/in/lawrence-antwi-27939a309/" target="_blank">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                                <div class="icon-circle">
+                                    <a href="https://www.tiktok.com/@lawrence_dev?_t=ZM-8zpbvRPGFYZ&_r=1" target="_blank">
+                                        <i class="fab fa-tiktok"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+        
+        
+        
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div
+                        class="row justify-content-center justify-content-md-between align-items-center flex-column-reverse flex-md-row">
+                        <div class="col-auto">
+                            <div class="footer-copyright">
+                                <p class="copyright-text">&copy; 2025<a href="index.html">A+ Softek</a> Made with <i
+                                        class="icofont-heart"></i> by <a href="" target="_blank">Lawrence</a> </p>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <a href="index.html" class="footer-logo">
+                                <div class="custom-header-branding" style="display: flex; align-items: center; gap: 5px;">
+                                    <a href="index.html" class="header-logo">
+                                        <img src="assets/images/logo/logo.png" alt="Logo" style="width: 60px; height: auto;">
+                                    </a>
+                                    <span class="logo-name" style="font-size: 20px; font-weight: 700; color: white;">A+
+                                        SOFTEK</span>
+                                </div>
+        
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ...::: End Footer Section :::... -->
+
+        
+
+        <!-- material-scrolltop button -->
+        <button class="material-scrolltop" type="button"></button>
+    </main>
+
+    <!-- Global Vendor, plugins JS -->
+
+    <!-- JS Files
+    ============================================ -->
+    <!-- Global Vendor, plugins JS -->
+
+    <!-- Vendor JS -->
+    <!-- <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script> -->
+    
+    <!--Plugins JS-->
+    <!-- <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/jquery.appear.min.js"></script>
+    <script src="assets/js/plugins/venobox.min.js"></script>
+    <script src="assets/js/plugins/jquery.waypoints.js"></script>
+    <script src="assets/js/plugins/images-loaded.min.js"></script>
+    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="assets/js/plugins/counter.js"></script>
+    <script src="assets/js/plugins/ajax-mail.js"></script>
+    <script src="assets/js/plugins/material-scrolltop.js"></script> -->
+
+    <!-- Minify Version -->
+    <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+
+    <!--Main JS (Common Activation Codes)-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
